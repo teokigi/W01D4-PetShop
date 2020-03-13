@@ -55,5 +55,5 @@ customer[:cash] -= cash_value
 end
 #count customers pets
 def customer_pet_count(customer)
-return
+return customer[:pets].length
 end
