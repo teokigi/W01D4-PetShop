@@ -28,3 +28,7 @@ def pets_by_breed(shop, breed)
     matched_breeds = shop[:pets].keep_if{|shop_pets| shop_pets[:breed] == breed}
     return matched_breeds
 end
+#find pet by name then return it
+def find_pet_by_name(shop, pet_name)
+    return shop
+end
