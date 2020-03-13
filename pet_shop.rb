@@ -6,15 +6,19 @@ end
 def total_cash(shop)
     return shop.dig(:admin, :total_cash)
 end
-
+#adds or removes cash transaction from total cash
 def add_or_remove_cash(shop, cash_amount)
     shop[:admin][:total_cash] += cash_amount
 end
-
+#returns amount of pets sold
 def pets_sold(shop)
     return shop.dig(:admin, :pets_sold)
 end
-
+# adds or subtracts number of pet sale transactions
 def increase_pets_sold(shop, sold_amount)
     shop[:admin][:pets_sold] += sold_amount
+end
+#return current pet stock
+def stock_count(shop)
+    return shop[:pets].length
 end
