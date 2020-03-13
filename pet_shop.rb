@@ -22,6 +22,9 @@ end
 def stock_count(shop)
     return shop[:pets].length
 end
+#return array of pet hash data that matches breed
 def pets_by_breed(shop, breed)
-    return shop[:pets].keep_if{|v| v[:breed] == "British Shorthair"}
+    matched_breeds = {}
+    matched_breeds = shop[:pets].keep_if{|shop_pets| shop_pets[:breed] == breed}
+    return matched_breeds
 end
