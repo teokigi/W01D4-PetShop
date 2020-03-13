@@ -51,4 +51,5 @@ return customer_cash_amount[:cash]
 end
 #remove customer cash
 def remove_customer_cash(customer, cash_value)
+customer[:cash] -= cash_value
 end
