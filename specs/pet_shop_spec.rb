@@ -96,8 +96,6 @@ class TestPetShop < Minitest::Test
     assert_equal(1010, cash)
   end
 
-
-
   def test_pets_sold
     sold = pets_sold(@pet_shop)
     assert_equal(0, sold)
@@ -140,11 +138,11 @@ class TestPetShop < Minitest::Test
     assert_nil(pet)
   end
 
-  # def test_add_pet_to_stock
-  #   add_pet_to_stock(@pet_shop, @new_pet)
-  #   count = stock_count(@pet_shop)
-  #   assert_equal(7, count)
-  # end
+  def test_add_pet_to_stock
+    add_pet_to_stock(@pet_shop, @new_pet)
+    count = stock_count(@pet_shop)
+    assert_equal(7, count)
+  end
 
   # def test_customer_cash
   #   cash = customer_cash(@customers[0])
