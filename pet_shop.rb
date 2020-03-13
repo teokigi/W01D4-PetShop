@@ -47,5 +47,8 @@ def add_pet_to_stock(shop,new_animal)
 end
 #check a customers cash amount
 def customer_cash(customer_cash_amount)
-return customer_cash_amount[:cash] 
+return customer_cash_amount[:cash]
+end
+#remove customer cash
+def remove_customer_cash(customer, cash_value)
 end
