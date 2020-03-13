@@ -37,3 +37,6 @@ def find_pet_by_name(shop, pet_name)
     end
     return nil
 end
+#remove pet by name
+def remove_pet_by_name(shop, pet_name)
+end
