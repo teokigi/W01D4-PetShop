@@ -57,3 +57,11 @@ end
 def customer_pet_count(customer)
 return customer[:pets].length
 end
+#add a new pet for the customer
+def add_pet_to_customer(customer, new_friend)
+    customer[:pets] << new_friend
+end
+#check if customer can afford pet
+def customer_can_afford_pet(customer,new_friend)
+return 
+end
