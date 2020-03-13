@@ -193,7 +193,7 @@ class TestPetShop < Minitest::Test
     customer = @customers[0]
     pet = find_pet_by_name(@pet_shop,"Arthur")
 
-  #   sell_pet_to_customer(@pet_shop, pet, customer)
+    sell_pet_to_customer(@pet_shop, pet, customer)
 
     assert_equal(1, customer_pet_count(customer))
     assert_equal(1, pets_sold(@pet_shop))

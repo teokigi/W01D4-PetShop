@@ -65,4 +65,6 @@ end
 def customer_can_afford_pet(customer,new_friend)
  return (customer[:cash] >= new_friend[:price])? true : false
 end
-#customer
+#sell pet to customer
+def sell_pet_to_customer(shop,the_pet,the_customer)
+end
