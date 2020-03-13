@@ -23,4 +23,5 @@ def stock_count(shop)
     return shop[:pets].length
 end
 def pets_by_breed(shop, breed)
+    return shop[:pets].keep_if{|v| v[:breed] == "British Shorthair"}
 end
