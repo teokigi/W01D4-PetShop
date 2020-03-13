@@ -63,5 +63,6 @@ def add_pet_to_customer(customer, new_friend)
 end
 #check if customer can afford pet
 def customer_can_afford_pet(customer,new_friend)
- return (customer[:cash] >= new_friend[:price])? true : false
+ return 1
 end
+#customer
