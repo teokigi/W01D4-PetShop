@@ -67,4 +67,8 @@ def customer_can_afford_pet(customer,new_friend)
 end
 #sell pet to customer
 def sell_pet_to_customer(shop,the_pet,the_customer)
+ add_pet_to_customer(the_customer,the_pet)
+ shop[:admin][:pets_sold] +=1
+ remove_customer_cash(the_customer,the_pet[:price])
+ add_or_remove_cash(shop,the_pet[:price])
 end
