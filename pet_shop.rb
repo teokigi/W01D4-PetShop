@@ -42,5 +42,5 @@ def remove_pet_by_name(shop, pet_name)
  shop[:pets].delete_if{|pet_info|pet_info[:name] == pet_name}
 end
 #add pet to stock
-def stock_count(shop,new_animal)
+def add_pet_to_stock(shop,new_animal)
 end
