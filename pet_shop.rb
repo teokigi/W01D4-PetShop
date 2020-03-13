@@ -47,5 +47,5 @@ def add_pet_to_stock(shop,new_animal)
 end
 #check a customers cash amount
 def customer_cash(customer_cash_amount)
-return 
+return customer_cash_amount[:cash] 
 end
