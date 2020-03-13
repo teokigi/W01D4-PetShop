@@ -68,9 +68,11 @@ end
 #sell pet to customer
 def sell_pet_to_customer(shop,the_pet,the_customer)
     if the_pet != nil
- add_pet_to_customer(the_customer,the_pet)
- shop[:admin][:pets_sold] +=1
- remove_customer_cash(the_customer,the_pet[:price])
- add_or_remove_cash(shop,the_pet[:price])
+        add_pet_to_customer(the_customer,the_pet)
+        shop[:admin][:pets_sold] +=1
+        remove_customer_cash(the_customer,the_pet[:price])
+        add_or_remove_cash(shop,the_pet[:price])
+    else
+        shop[:admin][:pets_sold] +=1
     end
 end
